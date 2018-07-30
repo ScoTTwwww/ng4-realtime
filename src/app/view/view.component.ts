@@ -11,7 +11,7 @@ export class ViewComponent implements OnInit {
   socket: any;
   xxxx: string = ''
   constructor() { 
-    this.socket = io('https://5000-dot-4207567-dot-devshell.appspot.com');
+    this.socket = io('http://localhost:5000');
   }
 
   ngOnInit() {
