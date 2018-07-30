@@ -2,6 +2,15 @@ let app = require('express')();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 
+io.set("origins = *");
+  io.set('transports', [
+    'websocket'
+  , 'flashsocket'
+  , 'htmlfile'
+  , 'xhr-polling'
+  , 'jsonp-polling'
+  ]);
+  
 io.on('connection', (socket) => {
 
     // Log whenever a user connects
