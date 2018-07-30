@@ -11,7 +11,7 @@ export class EmitComponent implements OnInit {
   @ViewChild('canvasElement') canvasElement: ElementRef;
   socket: any;
   constructor() {
-    this.socket = io('http://localhost:5000');
+    this.socket = io('ws://localhost:5000');
   }
 
   ngOnInit() {
