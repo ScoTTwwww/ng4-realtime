@@ -1,6 +1,6 @@
 {
   "/socket.io": {
-    "target": "https://5000-dot-4207567-dot-devshell.appspot.com",
+    "target": "wss://5000-dot-4207567-dot-devshell.appspot.com",
     "secure": false,
     "changeOrigin": true
   }  

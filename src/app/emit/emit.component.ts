@@ -12,7 +12,7 @@ export class EmitComponent implements OnInit {
   socket: any;
   constructor() {
     
-    this.socket = io();
+    this.socket = io('wss://5000-dot-4207567-dot-devshell.appspot.com');
   }
 
   ngOnInit() {
